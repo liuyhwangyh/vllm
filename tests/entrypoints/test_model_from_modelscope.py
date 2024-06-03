@@ -21,4 +21,3 @@ def test_offline_inference(monkeypatch):
 
     outputs = llm.generate(prompts, sampling_params)
     assert len(outputs) == 4
-

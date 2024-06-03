@@ -31,9 +31,9 @@ def get_config(model: str,
                 model,
                 trust_remote_code=trust_remote_code,
                 revision=revision,
-                code_revision=code_revision) 
+                code_revision=code_revision)
         else:
-            from transformers import AutoConfig   
+            from transformers import AutoConfig
             config = AutoConfig.from_pretrained(
                 model,
                 trust_remote_code=trust_remote_code,
