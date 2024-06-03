@@ -2,10 +2,10 @@ from typing import Dict, Optional
 
 from transformers import PretrainedConfig
 
+from vllm.envs import VLLM_USE_MODELSCOPE
 from vllm.logger import init_logger
 from vllm.transformers_utils.configs import (ChatGLMConfig, DbrxConfig,
                                              JAISConfig, MPTConfig, RWConfig)
-from vllm.envs import VLLM_USE_MODELSCOPE
 
 logger = init_logger(__name__)
 

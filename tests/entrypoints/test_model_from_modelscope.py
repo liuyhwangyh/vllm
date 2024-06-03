@@ -1,6 +1,3 @@
-import asyncio
-import pytest
-
 from vllm import LLM, SamplingParams
 
 # model: https://modelscope.cn/models/qwen/Qwen1.5-0.5B-Chat/summary
