@@ -112,7 +112,7 @@ class ModelConfig:
         self.revision = revision
         self.code_revision = code_revision
         self.rope_scaling = rope_scaling
-        # The tokenizer version is usually consistent with the model version
+        # The tokenizer version is consistent with the model version by default.
         if tokenizer_revision is None:
             self.tokenizer_revision = revision
         else:
