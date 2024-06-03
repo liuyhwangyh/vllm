@@ -402,7 +402,7 @@ class LLMEngine:
             max_input_length=None,
             tokenizer_mode=self.model_config.tokenizer_mode,
             trust_remote_code=self.model_config.trust_remote_code,
-            revision=self.model_config.tokenizer_revision)
+            revision=self.model_config.tokenizer_revision if self.model_config.tokenizer_revision is not None else self.model_config.revision)
         init_kwargs.update(tokenizer_init_kwargs)
 
         return get_tokenizer_group(self.parallel_config.tokenizer_pool_config,
